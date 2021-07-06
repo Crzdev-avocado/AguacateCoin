@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+body{
+	min-height: 100vh;
+	overflow-x: hidden;
+	background: linear-gradient(#2b1055,#739D38);
+
+}
+
+.titulo {
+    color: #9ED342;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.titulo2{
+    color:#9ED342;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	padding: 30px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10000;
+}
+header .logo{
+	color: #9ED342;
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+
+	
+}
+header ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header ul li{
+	list-style: none;
+	margin-left: 20px;
+}
+header ul li a{
+	text-decoration: none;
+	padding: 6px 6px;
+	color: #fff;
+	border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active
+{
+	background: #fff;
+	color: #2b1055;
+
+}
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#9BD72C;
+}
+
+section{
+	position: relative;
+	background: #1c0522;
+	width: 100%;
+	height: 100vh;
+	padding: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+
+}
+
+section::before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(to top,#1c0522,transparent);
+	z-index: 1000;
+
+}
+
+section img{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+section img#moon{
+	mix-blend-mode: screen;
+	
+}
+section img#mountains_front{
+	z-index: 10;
+
+}
+#text{
+	position: absolute;
+	right:  -350px;
+	color: #fff;
+	white-space: nowrap;
+	font-size: 7.5vw;	
+	z-index: 9;
+
+}
+#btn{
+	text-decoration: none;
+	display: inline;
+	padding: 8px 30px;
+	border-radius: 40px;
+	background: #fff;
+	color:#739D38;
+	font-size: 1.5em;
+	z-index: 9;
+	transform: translateY(100px);
+}
+.boton{
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+    background: #1c0522;
+
+    
+    
+    
+    
+    
+}
+.center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+
+.imagen-about-us{
+    width: 45%;
+
+    
+}
+
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+    color: #fff;
+    text-align: center;
+    width: 1000px;
+
+
+}
+
+.contenido-textos h3 span{
+    background: #92C206;
+    color: #ffff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+    
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+    color: #fff;
+    margin: auto;
+    width:500px;
+    
+}
+
+/* imagen div */
+
+
+}
+
+p.centrado2{
+    
+    text-align: center;
+}
+
+img.edit{
+    width: auto;
+    height: auto;
+    max-width: 75%;
+    max-height: 75%;
+}
+
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 100%;
+    }
+
+    .imagen-about-us{
+        width: 100%;
+    }
